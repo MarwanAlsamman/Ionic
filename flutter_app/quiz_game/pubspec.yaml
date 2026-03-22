@@ -1,0 +1,43 @@
+name: quiz_game
+description: Multiplayer real-time quiz game — powered by SignalR and .NET 8
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # SignalR client for Flutter
+  signalr_netcore: ^1.3.4
+
+  # HTTP client for REST API calls
+  http: ^1.1.0
+
+  # State management
+  provider: ^6.1.2
+
+  # Local storage (persisting userId, username)
+  shared_preferences: ^2.2.3
+
+  # Beautiful animations
+  flutter_animate: ^4.5.0
+
+  # Google Fonts
+  google_fonts: ^6.2.1
+
+  # UUID generation
+  uuid: ^4.3.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
